@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tienda de Productos Tecnológicos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 1. ENCABEZADO Y NAVEGACIÓN  -->
+    <header class="header sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light py-3">
+            <div class="container navbar-container">
+                <div class="navbar-brand d-flex align-items-center gap-2 m-0 text-primary fw-bold">
+                    <i class="fas fa-microchip"></i>
+                    <span>TechStore</span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTechStore" aria-controls="navbarTechStore" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTechStore">
+                    <ul class="navbar-nav navbar-menu gap-3 text-center mt-3 mt-md-0">
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. SECCIÓN PRINCIPAL O HERO  -->
+        <section id="inicio" class="hero d-flex align-items-center py-5">
+            <div class="container hero-container d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+                <div class="hero-content text-center text-md-start">
+                    <h1 class="text-primary fw-extrabold mb-3">Tecnología de Vanguardia</h1>
+                    <p class="text-muted mb-4">Descubre los mejores dispositivos y gadgets tecnológicos con las mejores ofertas del mercado.</p>
+                    <button class="btn btn-primary btn-lg custom-btn px-4">Explorar Productos</button>
+                </div>
+                <div class="hero-image text-center">
+                    <img src="imagenes/laptop2.jpg" class="img-fluid rounded shadow-sm" alt="Dispositivos tecnológicos modernos">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN DE BENEFICIOS -->
+        <section id="beneficios" class="benefits py-5">
+            <div class="container benefits-container">
+                <h2 class="text-center fw-bold text-primary mb-5">¿Por qué elegir TechStore?</h2>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card p-4 text-center rounded border-0">
+                        <div class="benefit-icon text-primary mb-3">
+                            <i class="fas fa-shipping-fast fa-2x"></i>
+                        </div>
+                        <h3 class="fw-bold h5">Envío Rápido</h3>
+                        <p class="text-muted small mb-0">Recibe tus pedidos en 24-48 horas. Envíos gratis en compras mayores a $50.</p>
+                    </article>
+
+                    <article class="benefit-card p-4 text-center rounded border-0">
+                        <div class="benefit-icon text-primary mb-3">
+                            <i class="fas fa-shield-alt fa-2x"></i>
+                        </div>
+                        <h3 class="fw-bold h5">Garantía Asegurada</h3>
+                        <p class="text-muted small mb-0">Todos nuestros productos cuentan con garantía oficial del fabricante y soporte técnico.</p>
+                    </article>
+
+                    <article class="benefit-card p-4 text-center rounded border-0">
+                        <div class="benefit-icon text-primary mb-3">
+                            <i class="fas fa-credit-card fa-2x"></i>
+                        </div>
+                        <h3 class="fw-bold h5">Precios Competitivos</h3>
+                        <p class="text-muted small mb-0">Los mejores precios del mercado con opciones de pago flexible y promociones exclusivas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN DE PRODUCTOS  -->
+        <section id="productos" class="products py-5 bg-light">
+            <div class="container products-container">
+                <h2 class="text-center fw-bold text-primary mb-5">Nuestros Productos</h2>
+
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <article class="card product-card border-0 shadow-sm overflow-hidden">
+                        <div class="product-image bg-white p-3 d-flex align-items-center justify-content-center">
+                            <img src="imagenes/celu.jpg" class="img-fluid" alt="Smartphone Premium">
+                        </div>
+                        <div class="card-body product-content d-flex flex-column p-4">
+                            <span class="badge bg-primary align-self-start mb-2 px-3 py-2">Smartphones</span>
+                            <h3 class="card-title h5 fw-bold text-dark">Smartphone Premium</h3>
+                            <p class="card-text text-muted small flex-grow-1">Pantalla AMOLED 6.7", procesador de última generación, cámara de 108MP.</p>
+                            <div class="product-footer d-flex justify-content-between align-items-center pt-3 border-top mt-3">
+                                <span class="product-price fw-bold text-primary h4 m-0">$899</span>
+                                <a href="#contacto" class="btn btn-primary btn-sm custom-btn px-3">Comprar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="card product-card border-0 shadow-sm overflow-hidden">
+                        <div class="product-image bg-white p-3 d-flex align-items-center justify-content-center">
+                            <img src="imagenes/laptop.png" class="img-fluid" alt="Laptop Gaming">
+                        </div>
+                        <div class="card-body product-content d-flex flex-column p-4">
+                            <span class="badge bg-primary align-self-start mb-2 px-3 py-2">Laptops</span>
+                            <h3 class="card-title h5 fw-bold text-dark">Laptop Gaming Ultra</h3>
+                            <p class="card-text text-muted small flex-grow-1">Procesador Intel i9, GPU RTX 4080, 32GB RAM, pantalla 144Hz 4K.</p>
+                            <div class="product-footer d-flex justify-content-between align-items-center pt-3 border-top mt-3">
+                                <span class="product-price fw-bold text-primary h4 m-0">$2,499</span>
+                                <a href="#contacto" class="btn btn-primary btn-sm custom-btn px-3">Comprar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="card product-card border-0 shadow-sm overflow-hidden">
+                        <div class="product-image bg-white p-3 d-flex align-items-center justify-content-center">
+                            <img src="imagenes/audifono.png" class="img-fluid" alt="Auriculares Inalámbricos">
+                        </div>
+                        <div class="card-body product-content d-flex flex-column p-4">
+                            <span class="badge bg-primary align-self-start mb-2 px-3 py-2">Audio</span>
+                            <h3 class="card-title h5 fw-bold text-dark">Auriculares Inalámbricos</h3>
+                            <p class="card-text text-muted small flex-grow-1">Cancelación de ruido activa, batería 40 horas, sonido envolvente 360°.</p>
+                            <div class="product-footer d-flex justify-content-between align-items-center pt-3 border-top mt-3">
+                                <span class="product-price fw-bold text-primary h4 m-0">$349</span>
+                                <a href="#contacto" class="btn btn-primary btn-sm custom-btn px-3">Comprar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="card product-card border-0 shadow-sm overflow-hidden">
+                        <div class="product-image bg-white p-3 d-flex align-items-center justify-content-center">
+                            <img src="imagenes/tablet.jpg" class="img-fluid" alt="Tablet Profesional">
+                        </div>
+                        <div class="card-body product-content d-flex flex-column p-4">
+                            <span class="badge bg-primary align-self-start mb-2 px-3 py-2">Tablets</span>
+                            <h3 class="card-title h5 fw-bold text-dark">Tablet Profesional</h3>
+                            <p class="card-text text-muted small flex-grow-1">Pantalla 12.9" ProMotion, Apple M2, stylus precision, 256GB almacenamiento.</p>
+                            <div class="product-footer d-flex justify-content-between align-items-center pt-3 border-top mt-3">
+                                <span class="product-price fw-bold text-primary h4 m-0">$1,199</span>
+                                <a href="#contacto" class="btn btn-primary btn-sm custom-btn px-3">Comprar</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SECCIÓN INFORMATIVA -->
+        <section id="nosotros" class="about py-5">
+            <div class="container about-container">
+                <h2 class="text-center fw-bold text-primary mb-5">Sobre TechStore</h2>
+
+                <div class="row about-content align-items-center g-4">
+                    <div class="col-12 col-md-5 about-image text-center">
+                        <img src="imagenes/tech.png" class="img-fluid rounded shadow-sm" alt="Tienda TechStore">
+                    </div>
+                    <div class="col-12 col-md-7 about-text">
+                        <h3 class="fw-bold text-dark h4 mb-3">Tu Destino de Confianza para Tecnología</h3>
+                        <p class="text-muted text-justify">Desde hace más de 10 años, TechStore ha sido el líder en la venta de productos tecnológicos de calidad. Nos comprometemos a ofrecer las últimas innovaciones con los mejores precios del mercado.</p>
+                        <p class="text-muted text-justify">Nuestro equipo de expertos está disponible para asesorarte en la elección del producto que mejor se adapte a tus necesidades. Ofrecemos garantía oficial, soporte técnico 24/7 y políticas de devolución sin complicaciones.</p>
+                        <p class="text-muted text-justify">Somos pioneros en innovación, calidad y servicio al cliente. Cada producto que vendemos es cuidadosamente seleccionado para garantizar tu satisfacción.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. LLAMADO A LA ACCIÓN (Paleta Gradiente Técnico) -->
+        <section class="cta py-5 text-white text-center">
+            <div class="container cta-container py-3">
+                <h2 class="fw-bold mb-3 text-white">¿Listo para Innovar?</h2>
+                <p class="opacity-75 mb-4 max-w-600 mx-auto">Obtén acceso a ofertas exclusivas, lanzamientos de productos y promociones especiales.</p>
+                <button class="btn btn-light btn-lg text-primary fw-bold px-4 shadow-sm">Suscribirse Ahora</button>
+            </div>
+        </section>
+
+        <!-- 7. SECCIÓN FORMULARIO (Componente form-control de Bootstrap integrado) -->
+        <section id="contacto" class="contact py-5 bg-light">
+            <div class="container contact-container style-form-block">
+                <h2 class="text-center fw-bold text-primary mb-2">Ponte en Contacto</h2>
+                <p class="text-center text-muted mb-5 contact-subtitle">¿Preguntas o comentarios? Nos encantaría escucharte.</p>
+
+                <form class="contact-form bg-white p-4 p-md-5 rounded shadow-sm mx-auto">
+                    <div class="mb-3 form-group">
+                        <label for="nombre" class="form-label fw-bold text-dark">Nombre Completo</label>
+                        <input type="text" class="form-control py-2" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label for="email" class="form-label fw-bold text-dark">Correo Electrónico</label>
+                        <input type="email" class="form-control py-2" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label for="telefono" class="form-label fw-bold text-dark">Teléfono</label>
+                        <input type="tel" class="form-control py-2" id="telefono" name="telefono" placeholder="+0959591024" required>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label for="asunto" class="form-label fw-bold text-dark">Asunto</label>
+                        <input type="text" class="form-control py-2" id="asunto" name="asunto" placeholder="Motivo de tu consulta" required>
+                    </div>
+
+                    <div class="mb-4 form-group">
+                        <label for="mensaje" class="form-label fw-bold text-dark">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2.5 fw-bold btn-submit custom-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-black text-white py-5">
+        <div class="container footer-container">
+            <div class="row footer-content g-4 mb-4">
+                <div class="col-12 col-md-3 text-center text-md-start footer-section">
+                    <h4 class="text-white fw-bold mb-3">TechStore</h4>
+                    <p class="text-light small">Tu tienda de tecnología confiable desde 2013.</p>
+                </div>
+
+                <div class="col-12 col-md-3 text-center text-md-start footer-section">
+                    <h4 class="text-white fw-bold mb-3">Enlaces</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#inicio" class="text-light text-decoration-none opacity-100 link-light">Inicio</a></li>
+                        <li><a href="#productos" class="text-light text-decoration-none opacity-100 link-light">Productos</a></li>
+                        <li><a href="#nosotros" class="text-light text-decoration-none opacity-100 link-light">Nosotros</a></li>
+                        <li><a href="#contacto" class="text-light text-decoration-none opacity-100 link-light">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-center text-md-start footer-section">
+                    <h4 class="text-white fw-bold mb-3">Contacto</h4>
+                    <p class="text-light small mb-1"><strong>Email:</strong> info@techstore.com</p>
+                    <p class="text-light small mb-1"><strong>Teléfono:</strong> +0959591024</p>
+                    <p class="text-light small mb-0"><strong>Dirección:</strong> 123 Tech Street, Tech City</p>
+                </div>
+
+                <div class="col-12 col-md-3 text-center text-md-start footer-section">
+                    <h4 class="text-white fw-bold mb-3">Redes Sociales</h4>
+                    <div class="social-links d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="#" class="text-white fs-5 link-light" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white fs-5 link-light" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-5 link-light" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5 link-light" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center pt-4 border-top border-secondary">
+                <p class="text-white-50 small mb-0">&copy; 2026 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

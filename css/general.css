@@ -1,0 +1,63 @@
+/* ============================================
+   ESTILOS GENERALES - VARIABLES Y BASE
+   ============================================ */
+
+:root {
+    /* Paleta de colores */
+    --color-principal: #0066cc;
+    --color-secundario: #000000;
+    --color-claro: #f0f4f8;
+    --color-texto: #222222;
+    --color-fondo: #ffffff;
+    --color-borde: #e0e0e0;
+    --color-gris: #808080;
+
+    /* Tipografía */
+    --font-principal: 'Roboto', sans-serif;
+    --font-titulo: 'Poppins', sans-serif;
+
+    /* Espaciado */
+    --espaciado-xs: 0.5rem;
+    --espaciado-sm: 1rem;
+    --espaciado-md: 1.5rem;
+    --espaciado-lg: 2rem;
+    --espaciado-xl: 3rem;
+
+    /* Bordes */
+    --radio-borde: 8px;
+    --radio-grande: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-principal);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+/* Utilitarios */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--espaciado-sm);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    scroll-margin-top: 60px;
+}
